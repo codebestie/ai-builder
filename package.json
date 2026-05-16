@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "eslint .",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "@vitejs/plugin-react": "^5.1.0",
+    "autoprefixer": "latest",
+    "lucide-react": "latest",
+    "postcss": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "latest",
+    "react-router-dom": "^6.28.0",
+    "react-syntax-highlighter": "latest",
+    "remark-gfm": "latest",
+    "tailwindcss": "^3.4.17",
+    "typescript": "latest",
+    "vite": "^6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "@playwright/test": "^1.60.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-syntax-highlighter": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "playwright": "latest",
+    "typescript-eslint": "latest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true,
+  "name": "dev-agents",
+  "version": "1.0.0",
+  "type": "module"
+}

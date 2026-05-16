@@ -1,0 +1,10 @@
+import type { LucideIcon } from 'lucide-react';
+export type Provider = 'openai'|'anthropic'|'gemini';
+export type AgentProvider = Provider|'any';
+export type OutputType = 'markdown'|'text'|'json';
+export type AgentInput = { id:string; label:string; type:'text'|'textarea'|'select'; required?:boolean; placeholder?:string; options?:string[] };
+export type Agent = { id:string; name:string; description:string; category:string; icon:string; Icon:LucideIcon; provider:AgentProvider; model:string; inputs:AgentInput[]; systemPrompt:string; outputType:OutputType };
+export type LlmMessage = { role:'system'|'user'|'assistant'; content:string };
+export type ApiKeys = Partial<Record<Provider,string>>;
+export type WorkflowStep = { agentId:string; overrides?:Record<string,string> };
+export type Workflow = { id:string; name:string; description:string; public:boolean; steps:WorkflowStep[]; usageCount:number; createdAt:string };
