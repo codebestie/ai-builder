@@ -1,0 +1,2 @@
+import { Mic } from 'lucide-react';
+export function VoiceButton({onText}:{onText:(t:string)=>void}){const SR=(window as any).SpeechRecognition||(window as any).webkitSpeechRecognition;if(!SR)return null;return <button type="button" className="rounded-xl border border-border px-3" onClick={()=>{const r=new SR();r.lang='en-US';r.onresult=(e:any)=>onText(e.results[0][0].transcript);r.start()}}><Mic className="h-4 w-4"/></button>}
